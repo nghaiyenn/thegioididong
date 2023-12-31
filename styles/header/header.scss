@@ -1,0 +1,97 @@
+.menu {
+    padding: 10px;
+    .menu-top {
+        gap: 20px;
+        .search {
+            background-color: aliceblue;
+            input {
+                border: none;
+            }
+        }
+    }
+    .menu-top{
+        .pick{
+            width: 10%;
+        }
+        .form-select{
+            font-weight: 500;
+            border: none;
+            height: 19px;
+            padding: 0px;
+            font-size: 12px;
+            background-color: var(--orange-color);
+        }
+        .top__item{
+            border-left: 1px solid #fff;
+        }
+        .option{
+            font-size: 10px;
+        }
+    }
+    background-color: var(--yellow-color);
+    .list__top {
+        margin: 0px;
+        list-style: none;
+        .top__item {
+            text-align: center;
+        }
+    }
+    button {
+        background-color: var(--orange-color);
+        border: none;
+        padding: 5px 10px;
+    }
+    .list__menu {
+        gap: 20px;
+        margin: 15px 0px 0px 0px;
+    }
+    .menu__item {
+        .menu-1 {
+            padding: 0px;
+        }
+        gap: 0;
+        list-style: none;
+        cursor: pointer;
+        position: relative;
+
+        .menu__sub {
+            display: none;
+            width:140%;
+            height: auto;
+            padding: 5px;
+            background-color: #fff;
+            position: absolute;
+            top: 25px;
+            left: 0px;
+            .menu__sub-item {
+                list-style: none;
+            }
+            .menu__sub-item:hover {
+                font-weight: 700;
+                transform: translateX(3px);
+                -webkit-transform: translateX(3px);
+                -moz-transform: translateX(3px);
+                -ms-transform: translateX(3px);
+                -o-transform: translateX(3px);
+}
+        }
+        &:hover {
+            // background-color: #fff !important;
+            .menu__sub {
+                display: block !important;
+                // background-color: red;
+            }
+        }
+    }
+    .has-chird::after{
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 6px solid #333;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+}

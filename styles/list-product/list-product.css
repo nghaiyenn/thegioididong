@@ -1,0 +1,69 @@
+.list-product .list-product-head {
+  width: 100%;
+  background-image: url(../../img/1-1200x120.gif);
+  background-size: cover;
+}
+.list-product .endtime,
+.list-product .timeline {
+  padding: 3% 10%;
+}
+.list-product .timeline {
+  gap: 10px;
+}
+.list-product .timeline-item {
+  border: none;
+  border-radius: 10px;
+  padding: 0% 10%;
+}
+.list-product .product {
+  padding: 3% 2%;
+  background-color: var(--red-color);
+  gap: 10px;
+}
+.list-product .product .product-top,
+.list-product .product .product-bottom {
+  gap: 10px;
+}
+.list-product .product .product-top .product-item,
+.list-product .product .product-bottom .product-item {
+  text-decoration: none;
+  color: #111;
+  background-color: #fff;
+  padding: 2%;
+  border-radius: 3%;
+  -webkit-border-radius: 3%;
+  -moz-border-radius: 3%;
+  -ms-border-radius: 3%;
+  -o-border-radius: 3%;
+}
+.list-product .product .product-top .product-item .fs-contain,
+.list-product .product .product-bottom .product-item .fs-contain {
+  gap: 5px;
+  background-color: #ddd;
+  border-radius: 25px;
+}
+.list-product .product .product-top .product-item .price,
+.list-product .product .product-bottom .product-item .price {
+  font-size: 13px;
+  gap: 5px;
+}
+.list-product .product .product-top .product-item .price label,
+.list-product .product .product-bottom .product-item .price label {
+  text-decoration-line: line-through;
+}
+.list-product .product .product-top .product-item .price small,
+.list-product .product .product-bottom .product-item .price small {
+  width: 100%;
+  padding: 5%;
+  height: auto;
+  color: #eb5757;
+  background-color: #fff0e9;
+}
+.list-product .product .product-top .product-item > img,
+.list-product .product .product-bottom .product-item > img {
+  width: 75%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+}/*# sourceMappingURL=list-product.css.map */
