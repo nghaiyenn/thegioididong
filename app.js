@@ -1,14 +1,14 @@
 let data = [
     {
         id: "1",
-        img: "https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/305659/TimerThumb/iphone-15-pro-max-512gb-(4).jpg",
+        img: "./img/list__product/iphone-15-pro-max-512gb-(4).png",
         name: "iPhone 15 Pro Max 512GB",
         priceSale: "39.690.000đ",
         price: "40.990.000đ",
         sale: "-3%",
         existence: "4/20 suất",
     },
-    {
+{
         id: "2",
         img: "https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/1662/251945/bao-da-smart-cover-cho-ipad-mini-nap-gap-apple-thumb-600x600.jpg",
         name: "Bao da nắp gập iPad mini Apple MX4R2 ",
@@ -50,7 +50,7 @@ let data = [
         name: "Camera IP 360 86 2MP Ezviz C6N",
         priceSale: "550.000đ",
         price: "890.000đ",
-        sale: "14%",
+        sale: "-14%",
         existence: "36/200 suất",
     },
     {
@@ -113,7 +113,7 @@ const renderProductItem = (params) => {
         .map((item) => {
             return `
            <li class="product-item d-flex col-2 ">
-                                            <a href="#"
+                                            <a href="./detail.html?${item.id}"
                                                 class=" d-flex flex-column justify-content-center align-items-center">
                                                 <img src="${item.img}" alt="${item.name}">
                                                 <div class="name-product">${item.name}</div>
@@ -132,7 +132,6 @@ const renderProductItem = (params) => {
          `;
         })
         .join("");
-    // return result;
 };
 renderProductItem(data);
 

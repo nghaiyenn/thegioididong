@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3426ec3618.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css"
+        integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/header/header.css">
+    <link rel="stylesheet" href="./styles/banner/banner.css">
+    <link rel="stylesheet" href="./styles/list-product/list-product.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <!-- slider header -->
+            <div id="carouselExampleControls" class="carousel slide w-100 d-md-flex" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="slider-content d-flex flex-column align-items-center">
+                            <div class="slider-content__img w-100">
+                                <img src="./img/DHXH1200-44-1200x44.png" class="w-100 h-auto" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-content d-flex flex-column align-items-center">
+                            <div class="slider-content__img w-100">
+                                <img src="./img/TZ-Xmas-1200-44-1200x44.png" class="w-100 h-auto" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-content d-flex flex-column align-items-center">
+                            <div class="slider-content__img w-100">
+                                <img src="./img/xmas-1200-44-1200x44.png" class="w-100 h-auto" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- menu -->
+            <div class="menu w-100 h-auto d-flex size-12 flex-column">
+                <div class="menu-top w-100 h-auto d-flex align-items-center flex-row flex-xxl-row flex-xl-row flex-lg-row flex-md-column flex-sm-column ">
+                    <a href="#" class="logo w-100">
+                        <img src="./img/Logo-tgdd.png" alt="logo">
+                    </a>
+                    <button class="pick w-75">
+                        <span>Xem giá, tồn kho tại </span>
+                        <select class="form-select w-100 " aria-label="Default select example">
+                            <option class="size-12 option-select-city" selected>Hồ Chí Minh </option>
+                            <option class="size-12 option-select-city" value="2">Hà Nội </option>
+                            <option class="size-12 option-select-city" value="3">Thái Bình </option>
+                            <option class="size-12 option-select-city" value="4">Hồ Chí Minh </option>
+                            <option class="size-12 option-select-city" value="5">Hà Nội </option>
+                            <option class="size-12 option-select-city" value="6">Thái Bình </option>
+                        </select>
+                    </button>
+                    <div class="search w-100 h-50 d-flex justify-content-center align-items-center ">
+                        <input class="form-control w-100 size-12 " type="search" placeholder="Bạn cần tìm gì ..."
+                            aria-label="Search">
+                        <i class="fa-solid fa-magnifying-glass h-100"></i>
+                    </div>
+                    <div class="btn w-100 d-flex justify-content-center align-items-center size-12">
+                        <button class="size-12"> Tài khoản và đơn hàng </button>
+                    <button class="size-12">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Giỏ hàng </span>
+                    </button>
+                    </div>
+                    <ul class="list__top h-auto w-100 d-flex align-items-center justify-content-center">
+                        <li class="top__item ">24h Công Nghệ</li>
+                        <li class="top__item ">Hỏi đáp </li>
+                        <li class="top__item ">Game Apps </li>
+                    </ul>
+                </div>
+                <div class="menu-bottom d-md-flex w-100 h-auto">
+                    <ul class="list__menu w-100 h-auto d-flex justify-content-between">
+                        <li class="menu__item">
+                            <img class="icon w-h-20" src="./img/i-phone.png" alt="">
+                            <span class="">Điện thoại </span>
+                        </li>
+                        <li class="menu__item">
+                            <img class="icon w-h-20" src="./img/i-laptop.png" alt="">
+                            <span class="">Laptop</span>
+                        </li>
+                        <li class="menu__item">
+                            <img class="icon w-h-20" src="./img/i-taplet.png" alt="">
+                            <span class="">Tablet</span>
+                        </li>
+                        <li class="menu__item">
+                            <img class="icon w-h-20" src="./img/i-heandphone.png" alt="">
+                            <span class="has-chird">Phụ kiện </span>
+                            <ul class="menu__sub "><b>Phụ kiện di động</b>
+                                <li class="menu__sub-item ">Tai nghe </li>
+                                <li class="menu__sub-item ">Sạc </li>
+                                <li class="menu__sub-item ">Ốp lưng </li>
+                                <li class="menu__sub-item ">Miếng dán</li>
+                                <li class="menu__sub-item ">Cáp chuyển đổi</li>
+                            </ul>
+                        </li>
+                        </li>
+                        <li class="menu__item">
+                            <img class="icon w-h-20" src="./img/i-watch.png" alt="">
+                            <span class="">Smartwatch </span>
+                        </li>
+                        <li class="menu__item">
+                            <img class="icon w-h-20" src="./img/watch-ic.png" alt="">
+                            <span class="">Đồng hồ </span>
+                        </li>
+                        <li class="menu__item">
+                            <img class="icon w-h-20" src="./img/icon-header-may-cu.png" alt="">
+                            <span class="has-chird">Máy cũ, thu cũ </span>
+                            <ul class="menu__sub ">
+                                <li class="menu__sub-item ">Máy cũ giá rẻ </li>
+                                <li class="menu__sub-item ">Thu cũ đổi mới </li>
+
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <img class="icon w-h-20" src="./img/pc.png" alt="">
+                            <span class="has-chird">PC, Máy in </span>
+                            <ul class="menu__sub ">
+                                <li class="menu__sub-item ">Tai nghe </li>
+                                <li class="menu__sub-item ">Sạc </li>
+                                <li class="menu__sub-item ">Ốp lưng </li>
+                                <li class="menu__sub-item ">Miếng dán</li>
+                                <li class="menu__sub-item ">Cáp chuyển đổi</li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <span class="">Sim, thẻ cào </span>
+                        </li>
+                        <li class="menu__item">
+                            <span class="">Dịch vụ và tiện ích </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+    </div>
+</body>
+</html>

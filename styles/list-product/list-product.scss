@@ -1,24 +1,35 @@
 .list-product {
     .list-product-head {
         width: 100%;
-        // height: 120px;
-        background-image: url(../../img/1-1200x120.gif);
+        height: 120px;
+        background-image: url(../../img/Tet-FS-1200x120.gif);
         background-size: cover;
     }
 
     .endtime,
     .timeline {
-        gap: 14px;
-        padding: 3% 10%;
+        gap: 14px; 
+    }
+    .endtime {
+        padding-left: 10%;
     }
     .timeline {
+    color: #000000;
         gap: 10px;
+        padding-bottom: 1rem;
     }
     .timeline-item {
-        border: none;
+        border: 1px solid #000000;
         border-radius: 10px;
-        padding: 0% 10%;
+        padding: 3px 20px;
     }
+    .timeline-item:nth-child(1){
+        background-color: #FFE201
+  }
+  .timeline-item:nth-child(2){
+    background-color: #BCB6B6
+}
+
     .product {
         padding: 3% 2%;
         background-color: var(--red-color);

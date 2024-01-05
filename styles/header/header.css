@@ -39,6 +39,7 @@
 }
 .menu .list__top {
   margin: 0px;
+  padding: 0px;
   list-style: none;
 }
 .menu .list__top .top__item {
