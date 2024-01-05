@@ -5,6 +5,7 @@
 }
 .list-product .endtime,
 .list-product .timeline {
+  gap: 14px;
   padding: 3% 10%;
 }
 .list-product .timeline {
@@ -18,52 +19,110 @@
 .list-product .product {
   padding: 3% 2%;
   background-color: var(--red-color);
-  gap: 10px;
+  flex-wrap: wrap;
 }
-.list-product .product .product-top,
-.list-product .product .product-bottom {
+
+.product-item a {
+  margin: 0 5px 10px;
   gap: 10px;
-}
-.list-product .product .product-top .product-item,
-.list-product .product .product-bottom .product-item {
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   text-decoration: none;
   color: #111;
   background-color: #fff;
-  padding: 2%;
+  padding: 10%;
   border-radius: 3%;
   -webkit-border-radius: 3%;
   -moz-border-radius: 3%;
   -ms-border-radius: 3%;
   -o-border-radius: 3%;
 }
-.list-product .product .product-top .product-item .fs-contain,
-.list-product .product .product-bottom .product-item .fs-contain {
+.product-item a .fs-contain {
   gap: 5px;
   background-color: #ddd;
   border-radius: 25px;
 }
-.list-product .product .product-top .product-item .price,
-.list-product .product .product-bottom .product-item .price {
+.product-item a .price {
   font-size: 13px;
   gap: 5px;
 }
-.list-product .product .product-top .product-item .price label,
-.list-product .product .product-bottom .product-item .price label {
+.product-item a .price label {
   text-decoration-line: line-through;
 }
-.list-product .product .product-top .product-item .price small,
-.list-product .product .product-bottom .product-item .price small {
+.product-item a .price small {
   width: 100%;
   padding: 5%;
   height: auto;
   color: #eb5757;
   background-color: #fff0e9;
 }
-.list-product .product .product-top .product-item > img,
-.list-product .product .product-bottom .product-item > img {
+.product-item a > img {
   width: 75%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   margin: auto;
+}
+.product-item a:hover {
+  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -o-transform: translateY(5px);
+}
+
+.deal__product {
+  background-color: var(--red-color);
+  margin-top: 3%;
+  padding-bottom: 3%;
+}
+.deal__product .deal__product-banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.deal__product-list {
+  padding: 3% 2%;
+  background-color: var(--red-color);
+  gap: 10px;
+}
+.deal__product-list .slider__product {
+  gap: 10px;
+}
+
+.deal__product-btn {
+  text-decoration: none;
+}
+
+.list__top {
+  background-image: url(../../img/danh-muc-noi-bat-1200x318-1.png);
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 5%;
+}
+.list__top .list__top-product {
+  list-style: none;
+}
+.list__top .list__top-product .top__product-item a {
+  text-decoration: none;
+  color: #111;
+}
+.list__top .list__top-product .top__product-item a > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.deal__online .deal__online-banner {
+  background-image: url(./../../img/1200x150-tgdd-1200x150-1\ \(1\).png);
+  width: 100%;
+  background-size: cover;
+  height: 100%;
 }/*# sourceMappingURL=list-product.css.map */

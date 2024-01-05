@@ -5,11 +5,8 @@
 .menu .menu-top {
   gap: 20px;
 }
-.menu .menu-top .search {
-  background-color: aliceblue;
-}
-.menu .menu-top .search input {
-  border: none;
+.menu .menu-top .btn {
+  gap: 10px;
 }
 .menu .menu-top .pick {
   width: 10%;
@@ -23,10 +20,22 @@
   background-color: var(--orange-color);
 }
 .menu .menu-top .top__item {
+  padding: 5px 10px;
   border-left: 1px solid #fff;
 }
 .menu .menu-top .option {
   font-size: 10px;
+}
+.menu .menu-top .logo > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.menu .menu-top .search {
+  background-color: aliceblue;
+}
+.menu .menu-top .search input {
+  border: none;
 }
 .menu .list__top {
   margin: 0px;
@@ -43,6 +52,7 @@
 .menu .list__menu {
   gap: 20px;
   margin: 15px 0px 0px 0px;
+  padding: 0% 2%;
 }
 .menu .menu__item {
   gap: 0;

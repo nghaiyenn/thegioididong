@@ -28,7 +28,7 @@
     <div class="wrapper">
         <div class="container">
             <!-- slider header -->
-            <div id="carouselExampleControls" class="carousel slide w-100" data-bs-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide w-100 d-md-flex" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="slider-content d-flex flex-column align-items-center">
@@ -64,12 +64,12 @@
                 </button>
             </div>
             <!-- menu -->
-            <div class="menu w-100 h-auto size-12">
-                <div class="menu-top d-flex align-items-center">
-                    <a href="#" class="logo">
+            <div class="menu w-100 h-auto d-flex size-12 flex-column">
+                <div class="menu-top w-100 h-auto d-flex align-items-center flex-row flex-xxl-row flex-xl-row flex-lg-row flex-md-column flex-sm-column ">
+                    <a href="#" class="logo w-75">
                         <img src="./img/Logo-tgdd.png" alt="logo">
                     </a>
-                    <button class="pick">
+                    <button class="pick w-75">
                         <span>Xem giá, tồn kho tại </span>
                         <select class="form-select w-100 " aria-label="Default select example">
                             <option class="size-12 option-select-city" selected>Hồ Chí Minh </option>
@@ -80,23 +80,25 @@
                             <option class="size-12 option-select-city" value="6">Thái Bình </option>
                         </select>
                     </button>
-                    <div class="search h-100 h-50 d-flex justify-content-center align-items-center">
-                        <input class="form-control me-2 size-13 " type="search" placeholder="Bạn cần tìm gì ..."
+                    <div class="search w-75 h-50 d-flex justify-content-center align-items-center">
+                        <input class="form-control w-100 size-13 " type="search" placeholder="Bạn cần tìm gì ..."
                             aria-label="Search">
                         <i class="fa-solid fa-magnifying-glass h-100"></i>
                     </div>
-                    <button> Tài khoản và đơn hàng </button>
+                    <div class="btn w-100 d-flex justify-content-center">
+                        <button> Tài khoản và đơn hàng </button>
                     <button>
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span>Giỏ hàng </span>
                     </button>
-                    <ul class="list__top h-auto d-flex align-items-center">
+                    </div>
+                    <ul class="list__top h-auto w-100 d-flex align-items-center">
                         <li class="top__item ">24h Công Nghệ</li>
                         <li class="top__item ">Hỏi đáp </li>
                         <li class="top__item ">Game Apps </li>
                     </ul>
                 </div>
-                <div class="menu-bottom">
+                <div class="menu-bottom d-md-flex w-100 h-auto">
                     <ul class="list__menu w-100 h-auto d-flex justify-content-between">
                         <li class="menu__item">
                             <img class="icon w-h-20" src="./img/i-phone.png" alt="">
@@ -160,9 +162,9 @@
                 </div>
             </div>
             <!-- banner -->
-            <div class="banner w-100 h-auto">
+            <a href="#" class="banner w-100 h-auto">
                 <img src="./img/banner2.png" alt="">
-            </div>
+            </a>
             <!--  -->
             <div id="carouselExampleControls" class="carousel slide w-100" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -170,7 +172,7 @@
                         <div class="slider-content d-flex flex-column align-items-center">
                             <div class="slider-content__img w-100 d-flex ">
                                 <img src="./img/slider1.png" class="d-block w-50" alt="...">
-                                <img src="./img/slider2.png" class="d-block w-50" alt="...">        
+                                <img src="./img/slider2.png" class="d-block w-50" alt="...">
                             </div>
                         </div>
                     </div>
@@ -178,7 +180,7 @@
                         <div class="slider-content d-flex flex-column align-items-center">
                             <div class="slider-content__img w-100 d-flex">
                                 <img src="./img/slider2.png" class="d-block w-50" alt="...">
-                                <img src="./img/slider3.png" class="d-block w-50" alt="...">        
+                                <img src="./img/slider3.png" class="d-block w-50" alt="...">
                             </div>
                         </div>
                     </div>
@@ -186,7 +188,7 @@
                         <div class="slider-content d-flex flex-column align-items-center">
                             <div class="slider-content__img w-100 d-flex">
                                 <img src="./img/slider3.png" class="d-block w-50" alt="...">
-                                <img src="./img/slider4.png" class="d-block w-50" alt="...">        
+                                <img src="./img/slider4.png" class="d-block w-50" alt="...">
                             </div>
                         </div>
                     </div>
@@ -202,8 +204,6 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <!--  -->
-            <!--  -->
             <!--  -->
             <div class="deal-conlection w-100 h-auto d-flex">
                 <div class="deal-item w-100 h-auto d-lg-flex justify-content-center align-items-center">
@@ -274,581 +274,27 @@
                     </div>
                 </div>
                 <!--  -->
-                <div id="carouselExampleControls" class="carousel slide w-100" data-bs-ride="carousel">
+                <div class="product d-flex w-100">
+                </div>
+               
+                <!--  -->
+                <!-- <div id="carouselExampleControls" class="carousel slide w-100 d-md-flex" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="slider-content d-flex flex-column align-items-center">
-                                <div class="slider-content__img w-100">
-                                    <div class="product d-flex flex-column">
-                                        <div class="product-top d-flex">
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label class="price" for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                        </div>
-                                        <div class="product-bottom d-flex">
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                        </div>
-                                    </div>
+                                <div class="product d-flex w-100">
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="slider-content d-flex flex-column align-items-center">
-                                <div class="slider-content__img w-100">
-                                    <div class="product d-flex flex-column">
-                                        <div class="product-top d-flex">
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label class="price" for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                        </div>
-                                        <div class="product-bottom d-flex">
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                        </div>
-                                    </div>
+                                <div class="product d-flex w-100">
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="slider-content d-flex flex-column align-items-center">
-                                <div class="slider-content__img w-100">
-                                    <div class="product d-flex flex-column">
-                                        <div class="product-top d-flex">
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label class="price" for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                        </div>
-                                        <div class="product-bottom d-flex">
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                            <!--  -->
-                                            <a class="product-item d-flex flex-column justify-content-center align-items-center">
-                                                <img src="./img/iphone-15-plus-thumbkm.png" alt="">
-                                                <div class="name-product">Iphone 15 plus</div>
-                                                <div class="price-sale">999</div>
-                                                <div class="price d-flex ">
-                                                    <label for="">999 </label>
-                                                    <small>99</small>
-                                                </div>
-                                                <div class="fs-contain w-100 d-flex justify-content-center align-items-center">
-                                                    <img class="w-h-15" src="./img/fs-iconfire.png" alt="">
-                                                    <span class="justify-content-center">Còn 5/10 suất </span>
-                                                </div>
-                                            </a>
-                                            <!--  -->
-                                        </div>
-                                    </div>
+                                <div class="product d-flex w-100">
                                 </div>
                             </div>
                         </div>
@@ -863,12 +309,201 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                </div>
+                </div> -->
+               
+                <!--  -->
             </div>
-            <!--  -->
-
+            <!-- deal product -->
+            <div class="deal__product">
+                <div class="deal__product-banner">
+                    <img src="./img/Deal-ngon-tgdd-1200x120-2.png" alt="">
+                </div>
+                <!--  -->
+                <div class="deal__product-list w-100 d-flex">
+                </div>
+                <!--  -->
+                <a class="deal__product-btn d-flex justify-content-center align-items-center" href="#">
+                    <button class="btn btn-light w-50" type="button">Xem tất cả > </button>
+                </a>
+            </div>
+            <!--  list top-->
+            <div class="list__top w-100 h-auto d-flex flex-column">
+                <h3>Danh mục nổi bật</h3>
+                <ul class="list__top-product w-100 d-flex ">
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                    <li class="top__product-item d-flex flex-column justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./img/Phone-128x129.png" alt="">
+                            <span> Điện thoại đặc quyền </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- deal online -->
+            <div class="deal__online w-100 h-auto d-flex flex-column">
+                <h3>Khuyến mãi chỉ có trên online </h3>
+                <div class="deal__online-banner">
+                </div>
+                <div class="deal__online-list d-flex flex-column w-100">           
+                <div class="deal__online-content d-flex flex-column w-100">
+                    <h3>Dịch vụ và tiện ích  </h3>
+                   <div class="deal__online-list d-flex">
+                    <div class="deal__online-item d-flex flex-column justify-content-center w-100">
+                        <div class="online__item-title d-flex">
+                            <img src="./img/desk11-50x50-1-50x50-1-50x50.png" alt="">
+                            <h4>Mua mã thẻ cào </h4>
+                        </div>
+                        <div class="online__item-content">
+                            <h4 class="">Giảm 2% <h4> cho mệnh giá từ 100.000 trở lên </h4></h4>
+                        </div>
+                    </div>
+                    <div class="deal__online-item d-flex flex-column justify-content-center w-100">
+                        <div class="online__item-title d-flex">
+                            <img src="./img/desk11-50x50-1-50x50-1-50x50.png" alt="">
+                            <h4>Mua mã thẻ cào </h4>
+                        </div>
+                        <div class="online__item-content">
+                            <h4 class="">Giảm 2% <h4> cho mệnh giá từ 100.000 trở lên </h4></h4>
+                        </div>
+                    </div>
+                    <div class="deal__online-item d-flex flex-column justify-content-center w-100">
+                        <div class="online__item-title d-flex">
+                            <img src="./img/desk11-50x50-1-50x50-1-50x50.png" alt="">
+                            <h4>Mua mã thẻ cào </h4>
+                        </div>
+                        <div class="online__item-content">
+                            <h4 class="">Giảm 2% <h4> cho mệnh giá từ 100.000 trở lên </h4></h4>
+                        </div>
+                    </div>
+                    <div class="deal__online-item d-flex flex-column justify-content-center w-100">
+                        <div class="online__item-title d-flex">
+                            <img src="./img/desk11-50x50-1-50x50-1-50x50.png" alt="">
+                            <h4>Mua mã thẻ cào </h4>
+                        </div>
+                        <div class="online__item-content">
+                            <h4 class="">Giảm 2% <h4> cho mệnh giá từ 100.000 trở lên </h4></h4>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+           
+            </div>
         </div>
     </div>
+    <script src="./app.js"></script>
 </body>
 
 </html>
