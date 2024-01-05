@@ -5,16 +5,19 @@
         background-image: url(../../img/Tet-FS-1200x120.gif);
         background-size: cover;
     }
+    .coundown-timer {
+        color: #ffe201;
+    }
 
     .endtime,
     .timeline {
-        gap: 14px; 
+        gap: 14px;
     }
     .endtime {
         padding-left: 10%;
     }
     .timeline {
-    color: #000000;
+        color: #000000;
         gap: 10px;
         padding-bottom: 1rem;
     }
@@ -23,12 +26,12 @@
         border-radius: 10px;
         padding: 3px 20px;
     }
-    .timeline-item:nth-child(1){
-        background-color: #FFE201
-  }
-  .timeline-item:nth-child(2){
-    background-color: #BCB6B6
-}
+    .timeline-item:nth-child(1) {
+        background-color: #ffe201;
+    }
+    .timeline-item:nth-child(2) {
+        background-color: #bcb6b6;
+    }
 
     .product {
         padding: 3% 2%;
@@ -37,58 +40,58 @@
     }
 }
 .product-item {
-   
-    a{
-        margin: 0 5px 10px; 
-        gap:10px;
+    a {
+        margin: 0 5px 10px;
+        gap: 10px;
         overflow: hidden;
-    -webkit-line-clamp: 2;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
         text-decoration: none;
-    color: #111;
-    background-color: #fff;
-    padding: 10%;
-    border-radius: 3%;
-    -webkit-border-radius: 3%;
-    -moz-border-radius: 3%;
-    -ms-border-radius: 3%;
-    -o-border-radius: 3%;
-    .fs-contain {
-        gap: 5px;
-        background-color: #ddd;
-        border-radius: 25px;
-    }
-    .price {
-        font-size: 13px;
-        gap: 5px;
-        label {
-            text-decoration-line: line-through;
+        color: #111;
+        background-color: #fff;
+        padding: 10%;
+        border-radius: 3%;
+        -webkit-border-radius: 3%;
+        -moz-border-radius: 3%;
+        -ms-border-radius: 3%;
+        -o-border-radius: 3%;
+        .fs-contain {
+            gap: 5px;
+            background-color: #ddd;
+            border-radius: 25px;
         }
-        small {
-            width: 100%;
-            padding: 5%;
+        .price {
+            font-size: 13px;
+            gap: 5px;
+            label {
+                text-decoration-line: line-through;
+            }
+            small {
+                width: 100%;
+                padding: 5%;
+                height: auto;
+                color: #eb5757;
+                background-color: #fff0e9;
+            }
+        }
+        > img {
+            width: 75%;
             height: auto;
-            color: #eb5757;
-            background-color: #fff0e9;
+            object-fit: cover;
+            margin: auto;
         }
-    }
-    > img {
-        width: 75%;
-        height: auto;
-        object-fit: cover;
-        margin: auto;
-    }
-    &:hover {
-        transform: translateY(5px);
-        -webkit-transform: translateY(5px);
-        -moz-transform: translateY(5px);
-        -ms-transform: translateY(5px);
-        -o-transform: translateY(5px);
-    }
+        &:hover {
+            transform: translateY(5px);
+            -webkit-transform: translateY(5px);
+            -moz-transform: translateY(5px);
+            -ms-transform: translateY(5px);
+            -o-transform: translateY(5px);
+        }
     }
 }
+// deal product
 .deal__product {
     background-color: var(--red-color);
     margin-top: 3%;
@@ -100,46 +103,76 @@
             object-fit: cover;
         }
     }
-    }
-    .deal__product-list {
-        padding: 3% 2%;
-        background-color: var(--red-color);
+}
+.deal__product-list {
+    padding: 3% 2%;
+    background-color: var(--red-color);
+    gap: 10px;
+    .slider__product {
         gap: 10px;
-        .slider__product{
-            gap:10px;
+    }
+}
+.deal__product-btn {
+    text-decoration: none;
+
+    background-image: url(./../../img/Decor-frame-1-1200x56-1.png);
+    width: 100%;
+    object-fit: cover;
+}
+// deal__product-online
+
+    .deal__product-online {
+        background-color: var(--red-color);
+        margin-top: 3%;
+        padding-bottom: 3%;
+        .list__product-online{
+            padding: 3% 2%;
+    background-color: var(--red-color);
+    gap: 10px
+        }
+        .deal__product-banner {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
-    .deal__product-btn{
-        text-decoration: none;
-       
-    }
-    .list__top{
-        background-image: url(../../img/danh-muc-noi-bat-1200x318-1.png);
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        margin-top: 5%;
-        .list__top-product{
-            list-style: none;
-            .top__product-item{
-                a{
-                    text-decoration: none;
-                    color: #111;
-                >img{
+
+//list-top
+.list__top {
+    background-image: url(../../img/danh-muc-noi-bat-1200x318-1.png);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 5%;
+    .list__top-product {
+        list-style: none;
+        .top__product-item {
+            a {
+                text-decoration: none;
+                color: #111;
+                > img {
                     width: 100%;
                     object-fit: cover;
                 }
-                }
-            }
             }
         }
-        .deal__online{
-            // gap:20px;
-            .deal__online-banner{
-                background-image:url(./../../img/1200x150-tgdd-1200x150-1\ \(1\).png);
-                width: 100%;
-                background-size: cover;
-                height: 100%;
-            }
-        }
-    
+    }
+}
+// deal online
+.deal__online {
+    // gap:20px;
+    .deal__online-banner {
+        background-image: url(./../../img/1200x150-tgdd-1200x150-1\ \(1\).png);
+        width: 100%;
+        background-size: cover;
+        height: 100%;
+    }
+}
+.top__product-item{
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
